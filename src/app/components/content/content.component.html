@@ -1,0 +1,14 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div *ngFor="let data of cardData;" class="col-md-3 col-sm-4">
+      <div class="card">
+        <figure>
+          <img class="img-fluid" [src]="data.thumbnail_logo" alt="thumbnail_img">
+          <figcaption style="font-weight: 600;">{{data.title}}</figcaption>
+          <figcaption>{{data.description}}</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</div>
